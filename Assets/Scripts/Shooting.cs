@@ -8,7 +8,11 @@ public class Shooting : MonoBehaviour
 
     public float range = 20f;
 
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
 
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
     private void Start()
     {
@@ -46,6 +50,25 @@ public class Shooting : MonoBehaviour
         if (target == null)
         {
             return;
+        }
+
+        if (fireCountdown <= 0f)
+        {
+            Shoot();
+            fireCountdown = 1 / fireRate;
+        }
+
+        fireCountdown -= Time.deltaTime;
+
+    }
+
+    void Shoot()
+    {
+        GameObject bulletObj = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet1 bullet = bulletObj.GetComponent<Bullet1>();
+        if (bullet != null)
+        {
+            bullet.Seek(target);
         }
     }
 
