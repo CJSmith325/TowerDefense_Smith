@@ -5,12 +5,13 @@ using UnityEngine.AI;
 
 public class EnemyAINavMesh : MonoBehaviour
 {
-    [SerializeField] private Transform posTransform;
+    private Transform posTransform;
     private NavMeshAgent navMeshAgent;
 
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        posTransform = GameObject.Find("Finish").transform;
     }
 
     // Update is called once per frame

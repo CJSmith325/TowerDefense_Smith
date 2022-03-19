@@ -13,7 +13,9 @@ public class SceneLoad : MonoBehaviour
 
     public void LoadLevel(string name)
     {
+        GameControl.health = 200;
+        GameControl.currency = 0;
+        GameControl.winTime = 180;
         SceneManager.LoadScene(name);
-
     }
 }

@@ -9,7 +9,7 @@ public class TowerTimer : MonoBehaviour
 
     protected float Timer;
 
-    private int time = 45;
+    private int time = 40;
     public int DelayAmount = 1; // Second count
     // Start is called before the first frame update
     void Start()
