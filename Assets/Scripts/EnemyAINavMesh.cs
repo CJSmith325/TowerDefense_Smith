@@ -18,4 +18,15 @@ public class EnemyAINavMesh : MonoBehaviour
     {
         navMeshAgent.destination = posTransform.position;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (this.gameObject.CompareTag("Enemy"))
+        {
+            GameControl.health = GameControl.health - 20;
+            Destroy(this.gameObject);
+            Debug.Log(GameControl.health);
+        }
+    }
+
 }
