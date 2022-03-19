@@ -21,9 +21,9 @@ public class EnemyAINavMesh : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (this.gameObject.CompareTag("Enemy"))
+        if (this.gameObject.CompareTag("Enemy") || this.gameObject.CompareTag("Enemy2"))
         {
-            GameControl.health = GameControl.health - 20;
+            GameControl.health = GameControl.health - 10;
             Destroy(this.gameObject);
             Debug.Log(GameControl.health);
         }

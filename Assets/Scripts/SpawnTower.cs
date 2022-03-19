@@ -40,7 +40,7 @@ public class SpawnTower : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
                     Instantiate(towerPrefab1, new Vector3(hit.point.x, hit.point.y, hit.point.z), Quaternion.identity);
-
+                    GameControl.currency -= 5;
                 }
             }
         }   
@@ -54,7 +54,7 @@ public class SpawnTower : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
                     Instantiate(towerPrefab2, new Vector3(hit.point.x, hit.point.y, hit.point.z), Quaternion.identity);
-
+                    GameControl.currency -= 20;
                 }
             }
         }
