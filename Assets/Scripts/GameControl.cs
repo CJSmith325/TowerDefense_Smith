@@ -7,5 +7,5 @@ public class GameControl
     public static int currency = 0;
     public static int health = 200;
 
-
+    public static int winTime = 180;
 }
