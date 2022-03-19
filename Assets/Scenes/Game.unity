@@ -2720,6 +2720,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656620673, guid: 2957ec9568b033a4e9e8febeb7702e5d, type: 3}
+      propertyPath: range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656620673, guid: 2957ec9568b033a4e9e8febeb7702e5d, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3250211511931147638, guid: 2957ec9568b033a4e9e8febeb7702e5d, type: 3}
       propertyPath: m_Name
       value: Tower1
