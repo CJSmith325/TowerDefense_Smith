@@ -818,6 +818,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087397813}
   m_CullTransparentMesh: 1
+--- !u!1 &1481498756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1481498757}
+  - component: {fileID: 1481498759}
+  - component: {fileID: 1481498758}
+  m_Layer: 5
+  m_Name: Instructions (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1481498757
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481498756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2934091, y: 1.2934091, z: 1.2934091}
+  m_Children: []
+  m_Father: {fileID: 1562313756}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 409, y: -589}
+  m_SizeDelta: {x: 858.2931, y: 263.6438}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1481498758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481498756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Credits: https://assetstore.unity.com/packages/3d/characters/robots/robot-soldier-142438
+
+    https://assetstore.unity.com/packages/3d/characters/robots/cyber-soldier-52064
+
+    https://assetstore.unity.com/packages/3d/characters/low-poly-soldiers-demo-73611
+
+    https://assetstore.unity.com/packages/3d/characters/humanoids/toon-soldiers-ww2-demo-85702'
+--- !u!222 &1481498759
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481498756}
+  m_CullTransparentMesh: 1
 --- !u!1 &1522772875
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -555, y: -446}
+  m_AnchoredPosition: {x: -555, y: -381.9}
   m_SizeDelta: {x: 595.4929, y: 259.2991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522772877
@@ -889,9 +974,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Gameplay Instructions: Left Click or Right Click to place towers to defend
-    the green zone. Left Click: Single-target infantry, costs five currency. Right
-    Click: AOE grenadier, costs 20 currency. All towers have a lifetime of 45 seconds,
-    survive 3 minutes to win. Press ESC to pause.'
+    the green zone. Left Click: Infantry unity, costs five currency. Right Click:
+    1-hit kill grenadier, costs 20 currency. All towers have a lifetime of 45 seconds,
+    survive 3 minutes to win. Red enemy is faster and takes 1 hit to kill, pink enemy
+    is slower and takes 3 hits to kill. Press ESC to pause.'
 --- !u!222 &1522772878
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1088,6 +1174,7 @@ RectTransform:
   - {fileID: 944919650}
   - {fileID: 855103361}
   - {fileID: 876891550}
+  - {fileID: 1481498757}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

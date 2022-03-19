@@ -66,9 +66,14 @@ public class Shooting : MonoBehaviour
     {
         GameObject bulletObj = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet1 bullet = bulletObj.GetComponent<Bullet1>();
+        Grenade grenade = bulletObj.GetComponent<Grenade>();
         if (bullet != null)
         {
             bullet.Seek(target);
+        }
+        if (grenade != null)
+        {
+            grenade.Seek(target);
         }
     }
 
